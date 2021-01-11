@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 const Header = () => {
   return (
     <header>
-      <Navbar bg="light" expand="lg" collapseOnSelect>
+      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand href="/">Stern9 eShop</Navbar.Brand>
