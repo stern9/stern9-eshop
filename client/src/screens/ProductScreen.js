@@ -8,7 +8,6 @@ import {
   ListGroup,
   Card,
   Button,
-  ListGroupItem,
   Form,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
@@ -68,7 +67,7 @@ const ProductScreen = ({ history, match }) => {
                   </ListGroup.Item>
 
                   {product.countInStock > 0 && (
-                    <ListGroupItem>
+                    <ListGroup.Item>
                       <Row>
                         <Col>Quantity:</Col>
                         <Col>
@@ -87,7 +86,7 @@ const ProductScreen = ({ history, match }) => {
                           </Form.Control>
                         </Col>
                       </Row>
-                    </ListGroupItem>
+                    </ListGroup.Item>
                   )}
 
                   <ListGroup.Item>
@@ -107,19 +106,19 @@ const ProductScreen = ({ history, match }) => {
           <Row>
             <Col>
               <ListGroup>
-                <ListGroupItem>
+                <ListGroup.Item>
                   <h4>{product.name}</h4>
-                </ListGroupItem>
-                <ListGroupItem>
+                </ListGroup.Item>
+                <ListGroup.Item>
                   <Rating
                     value={product.rating}
                     text={`${product.numReviews} reviews`}
                   />
-                </ListGroupItem>
-                <ListGroupItem>Price: ${product.price}</ListGroupItem>
-                <ListGroupItem>
+                </ListGroup.Item>
+                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+                <ListGroup.Item>
                   Description: {product.description}
-                </ListGroupItem>
+                </ListGroup.Item>
               </ListGroup>
             </Col>
           </Row>
