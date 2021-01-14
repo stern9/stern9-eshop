@@ -24,6 +24,21 @@ h2 {
   padding: 0.75rem 0.95rem;
 }
 
+@media (max-width: 575px) {
+  div.navbar-nav {
+    padding-top: 0.6rem;
+  }
+  button.btn-outline-warning {
+    margin-top: 0.6rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .ml-sm-5 {
+    margin-left: 0.1rem !important;
+  }
+}
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
@@ -41,7 +56,7 @@ h2 {
 
 .carousel img {
   height: 300px;
-  padding: 30px;
+  padding: 50px;
   margin: 40px;
   border-radius: 50%;
   margin-left: auto;
