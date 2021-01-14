@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run data:import`
+
+Resets db to what we have in the seeded file
+
 ### `yarn start`
 
 Runs the app in the development mode.\

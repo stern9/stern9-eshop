@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
@@ -50,10 +50,10 @@ const ShippingScreen = ({ history }) => {
         </Form.Group>
 
         <Form.Group controlId="postalCode">
-          <Form.Label>PostalCode</Form.Label>
+          <Form.Label>Postal Code</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter postalcode"
+            placeholder="Enter postal code"
             value={postalCode}
             required
             onChange={(e) => setPostalCode(e.target.value)}

@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
@@ -5,7 +6,7 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col className="text-center py-3">Copyright &copy; stern9</Col>
+          <Col className="text-center py-3">Copyright &copy; stern9 eShop</Col>
         </Row>
       </Container>
     </footer>
