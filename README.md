@@ -52,6 +52,16 @@
 
 ## Getting Started
 
+### Testing the UI with dummy data
+
+#### Admin can add items, process purchases, edit users
+
+| Admin                           |             User              |
+| ------------------------------- | :---------------------------: |
+| admin user: Test Admin          |     user user: Test User      |
+| admin email: testAdmin@mail.com | user email: testUser@mail.com |
+| admin pass: admin               |        user pass: user        |
+
 To get a local copy up and running follow these simple steps.
 
 ### Installation
