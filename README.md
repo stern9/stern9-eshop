@@ -56,11 +56,11 @@
 
 #### Admin can add items, process purchases, edit users
 
-| Admin                           |             User              |
-| ------------------------------- | :---------------------------: |
-| admin user: Test Admin          |     user user: Test User      |
-| admin email: testAdmin@mail.com | user email: testUser@mail.com |
-| admin pass: admin               |        user pass: user        |
+| Admin                     |           User           |
+| ------------------------- | :----------------------: |
+| user: Test Admin          |     user: Test User      |
+| email: testAdmin@mail.com | email: testUser@mail.com |
+| pass: admin               |        pass: user        |
 
 To get a local copy up and running follow these simple steps.
 
