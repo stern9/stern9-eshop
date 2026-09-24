@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://stern9-anime-app.netlify.app/">
+  <a href="https://github.com/stern9/stern9-eshop">
     <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/shopping-bags_1f6cd-fe0f.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -11,7 +11,9 @@
     Full Stack ecommerce MERN App. Built with React, NodeJS and Express. Data is handled using MongoDB. Payments managed through PayPal.
     <br />
     <br />
-    <a href="https://stern-eshop.herokuapp.com/" target="_blank">View Demo »</a>
+    <a href="https://stern9-eshop.onrender.com/" target="_blank">View Demo »</a>
+    <br />
+    <sub>Hosted on a free tier: the first visit after a quiet spell can take up to a minute to wake up.</sub>
   </p>
 </p>
 
@@ -48,19 +50,22 @@
 - [Redux](https://redux.js.org/)
 - [JWT](https://jwt.io/)
 - [PayPal](https://developer.paypal.com/docs/checkout/)
-- [Heroku](https://www.heroku.com/)
+- [Render](https://render.com/) + [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 ## Getting Started
 
-### Testing the UI with dummy data
+### Demo accounts
 
 #### Admin can add items, process purchases, edit users
 
-| Admin                     |           User           |
-| ------------------------- | :----------------------: |
-| user: Test Admin          |     user: Test User      |
-| email: testAdmin@mail.com | email: testUser@mail.com |
-| pass: admin               |        pass: user        |
+| Admin                    | User                     |
+| ------------------------ | ------------------------ |
+| email: admin@example.com | email: john@example.com  |
+| pass: 123456             | pass: 123456             |
+
+PayPal runs in sandbox mode, so no real money moves. Pay with a [PayPal sandbox buyer account](https://developer.paypal.com/tools/sandbox/accounts/) or a test card.
+
+The demo data is reset from time to time, and images uploaded through the admin screen are not kept between restarts.
 
 To get a local copy up and running follow these simple steps.
 
@@ -73,9 +78,13 @@ To get a local copy up and running follow these simple steps.
    ```
 2. Install NPM packages
    ```sh
-   npm install / yarn
+   npm install
+   npx yarn@1 --cwd client install
    ```
-3. Connect DB and data needs to be imported from server/seeder. Will need to set up API in .env file
+3. Copy `.env.example` to `.env` and fill in `MONGO_URI`, `JWT_SECRET` and `PAYPAL_CLIENT_ID`, then seed the database
+   ```sh
+   npm run data:import
+   ```
 
 4. Run both client and server
    ```sh
