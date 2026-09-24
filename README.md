@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/stern9/stern9-eshop">
-    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/271/shopping-bags_1f6cd-fe0f.png" alt="Logo" width="80" height="80">
+    <img src="client/public/logo192.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">MERN eShop</h3>
