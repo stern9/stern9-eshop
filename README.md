@@ -29,11 +29,14 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#demo-accounts">Demo accounts</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -41,12 +44,12 @@
 
 ### Built With
 
-- [MongoDB](https://www.mongodb.com/3)
+- [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/docs/guide.html)
 - [ExpressJS](https://expressjs.com/)
-- [ReactJS](https://reactjs.org/docs/)
+- [ReactJS](https://react.dev/)
 - [NodeJS](https://nodejs.org/en/)
-- [React-bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
+- [React-bootstrap](https://react-bootstrap.github.io/)
 - [Redux](https://redux.js.org/)
 - [JWT](https://jwt.io/)
 - [PayPal](https://developer.paypal.com/docs/checkout/)
@@ -69,6 +72,12 @@ The demo data is reset from time to time, and images uploaded through the admin 
 
 To get a local copy up and running follow these simple steps.
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 24
+- A MongoDB database, e.g. a free [MongoDB Atlas](https://www.mongodb.com/atlas) cluster
+- A [PayPal sandbox](https://developer.paypal.com/) app Client ID (for checkout)
+
 ### Installation
 
 1. Clone the repo
@@ -88,8 +97,9 @@ To get a local copy up and running follow these simple steps.
 
 4. Run both client and server
    ```sh
-   npm run dev / yarn dev
+   npm run dev
    ```
+   The client runs on http://localhost:3000 and the API on port 5001.
 
 ## Contributing
 
@@ -101,12 +111,16 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
 ## Acknowledgements
 
 - [nodemon](https://github.com/remy/nodemon)
 - [concurrently](https://github.com/kimmobrunfeldt/concurrently#readme)
 - [dotenv](https://www.npmjs.com/package/dotenv)
-- [colors-js](https://www.npmjs.com/package/colors.js)
+- [colors-js](https://www.npmjs.com/package/colors)
 - [express-async-handler](https://www.npmjs.com/package/express-async-handler)
 - [font-awesome](https://cdnjs.com/libraries/font-awesome)
 - [morgan](https://github.com/expressjs/morgan#readme)
